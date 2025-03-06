@@ -1,0 +1,42 @@
+\documentclass[12pt, a4paper]{article} % Sets font size and paper size
+
+% PACKAGES
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{lmodern} % Modern font
+\usepackage{geometry} % Set margins
+\geometry{margin=1in} % 1-inch margins
+\usepackage{graphicx} % Allows adding images
+\usepackage{amsmath, amssymb} % Math symbols
+\usepackage{biblatex} % Bibliography support
+\addbibresource{references.bib} % Link to bibliography file
+
+% OPTIONAL: Customizing line spacing
+\usepackage{setspace}
+\onehalfspacing % 1.5 spacing
+
+% OPTIONAL: Custom section fonts
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+
+% DOCUMENT START
+\begin{document}
+	
+	\title{Your Paper Title}
+	\author{Your Name}
+	\date{\today}
+	\maketitle
+	
+	\begin{abstract}
+		This is the abstract section of your paper. It provides a summary of the research.
+	\end{abstract}
+	
+	\section{Introduction}
+	This is the introduction section.
+	
+	% INCLUDE OTHER SECTIONS
+	 %\input{sections/methodology} % Example: Separate section file
+	
+	\printbibliography % Print references
+	
+\end{document}
